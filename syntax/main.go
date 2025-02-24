@@ -1,6 +1,7 @@
 package main
 
 import (
+	"basic_go_dm/syntax/method"
 	"fmt"
 )
 
@@ -36,4 +37,17 @@ func main() {
 	deferCloseTestA()
 	deferCloseTestB()
 	deferCloseTestC()
+
+	method.MethodTest()
+	u1 := method.Users{
+		Name: "Ilya",
+		Age:  18,
+	}
+
+	u1.ChangeName("Mike")
+	u1.ChangeAge(20)
+
+	fmt.Printf("%+v \n", u1)
+
+	method.ExtendTest()
 }
