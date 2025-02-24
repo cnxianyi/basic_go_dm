@@ -12,7 +12,7 @@ func Closure() func() int {
 }
 
 // defer
-// 一个函数最多8个defer
+// 一个函数最多8个defer. 如果超过8个 defer会使用堆来实现 defer 而不是原本的栈
 // 后进先出
 func Defer() {
 	var i int = 0

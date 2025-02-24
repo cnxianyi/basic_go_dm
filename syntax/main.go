@@ -32,4 +32,8 @@ func main() {
 	Slice()
 
 	Map()
+
+	deferCloseTestA()
+	deferCloseTestB()
+	deferCloseTestC()
 }
